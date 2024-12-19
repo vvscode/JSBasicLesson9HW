@@ -1,7 +1,6 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import jest from "eslint-plugin-jest";
-import eslintRecommended from "eslint-plugin-prettier/recommended";
+import globals from 'globals';
+import jest from 'eslint-plugin-jest';
+import eslintRecommended from 'eslint-plugin-prettier/recommended';
 
 export default [
   eslintRecommended,
@@ -10,13 +9,15 @@ export default [
       globals: globals.browser,
     },
     rules: {
-      "prefer-const": "warn",
-      "no-unused-vars": "warn",
-      "semi": "error",
+      'prefer-const': 'warn',
+      'no-unused-vars': 'warn',
+      semi: 'error',
+      'import/prefer-default-export': 'off',
+      'import/extensions': 'off',
     },
   },
   {
-     files: ["src/**/*.js"], 
-	 ...jest.configs["flat/recommended"],
-  }
+    files: ['src/**/*.js'],
+    ...jest.configs['flat/recommended'],
+  },
 ];
