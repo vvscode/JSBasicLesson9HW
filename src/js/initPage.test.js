@@ -1,4 +1,4 @@
-import { initPage } from './InitPage';
+import { initPage } from './initPage';
 
 describe('initPage', () => {
   let el, input;
