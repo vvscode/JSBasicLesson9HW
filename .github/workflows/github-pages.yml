@@ -15,7 +15,7 @@ jobs:
         run: |
           echo "Start build..."
           mkdir dist
-          cp -R src\* dist
+          cp -R src/* dist
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
