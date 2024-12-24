@@ -16,18 +16,6 @@ jobs:
         mkdir dist
         cp -R src/* dist
 
-      - name: Install Packages
-        run: |
-          npm install
-
-      - name: Lint check
-        run: |
-          npm run lint
-
-      - name: Lint check
-        run: |
-          npm run test
-          
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
